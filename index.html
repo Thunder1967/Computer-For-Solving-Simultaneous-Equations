@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<title>解聯立計算機</title>
+</head>
+
+<body class="body-set">
+  <script>
+  </script>
+
+  <header>
+    <a href="">
+      <h1 class="header-mark">解聯立計算機</h1>
+    </a>
+  </header>
+  <nav>
+    <br>
+    <input type="button" id="intmode" class="mode enablemode" onclick="change_mode(0)" value="Int"></input><!--
+    --><input type="button" id="floatmode" class="mode" onclick="change_mode(1)" value="Float"></input>
+  </nav>
+  <hr>
+  <section>
+    <textarea class="textbox" id="input"></textarea>
+    <br>
+    <input type="button" onclick="handle()" value="執行"></input>
+    <input type="button" onclick="resetform()" value="重置"></input>
+    <span id="result"></span>
+    <br>
+    <input type="button" id="advanced-setting" onclick="advancedsetting()" value="▶ 進階設定"></input>
+    <div id="advanced-setting-main" class = "advanced-setting-main" hidden>
+      <div id="only-result">
+        <p style="display: inline">只顯示解聯立結果:</p>
+        <input type="checkbox" id="only-result-main" checked></input>
+      </div>
+      <div id="float-calculate">
+        <p style="display: inline">進位方式:</p>
+        <select id="float-round">
+          <option value="0">無條件進位</option>
+          <option value="1" selected>四捨五入</option>
+          <option value="2">無條件捨去</option>
+        </select>
+        <p style="display: inline">小數點最低位數:</p>
+        <input type="number" value=3 min="0" max="10" id="float-display-number"></input>
+      </div>
+    </div>
+    <p class="warnning" id="alert1" hidden>"警告": 請確保矩陣中沒有空欄位和非數字</p>
+    <hr>
+    <textarea class="textbox" id="output" readonly></textarea>
+  </section>
+  <hr>
+  <section>
+    <h2 class="introduction">使用方法:</h3>
+    <h3 class="introduction">1.選擇計算方式</h3>
+    <p class="introduction">● Int模式: 輸入會被無條件捨去；計算過程中不使用除法且不產生小數</p>
+    <p class="introduction">● float模式: 計算過程中會產生小數，有一定的誤差</p>
+    <br>
+    <h3 class="introduction">2.輸入聯立方程式(矩陣)係數</h3>
+    <p class="introduction">● 每行以空白間隔；每列以換行間隔，輸入聯立方程式(矩陣)係數</p>
+    <p class="introduction">● 輸入中的非數字會被自動忽略</p>
+    <p class="introduction">● 此運算程式即用高斯消去求解</p>
+    <br>
+    <h3 class="introduction">3.執行並查看運算結果</h3>
+    <p class="introduction">● 可至進階設定調整輸出方式</p>
+  </section>
+</body>
+
+</html>

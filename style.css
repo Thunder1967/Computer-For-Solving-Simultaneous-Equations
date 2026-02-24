@@ -1,0 +1,72 @@
+header{
+    background-color: darkslateblue;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.body-set{
+    margin: 0px;
+}
+.header-mark{
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    color: white;
+}
+.textbox{
+    height: 200px;
+    width: 400px;
+    padding: 4px;
+}
+.enablemode{
+    background-color: rgb(0, 150, 0);
+    color: white;
+}
+.warnning{
+    margin: 0px;
+    padding: 15px 0px 15px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: lightcoral;
+    color: black;
+    width: 400px;
+    text-align: center;
+    border-radius: 4px;
+}
+.mode{
+    font-size: 16px;
+}
+.introduction{
+    margin: 0px;
+    padding: 0px;
+}
+#advanced-setting-main{
+    font-size: 14px;
+    margin: 3px;
+}
+#result{
+    font-size: 14px;
+}
+#intmode{
+    margin: 0px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    padding: 2px 12px 2px 12px;
+}
+#floatmode{
+    margin: 0px;
+    border-style: solid;
+    border-width: 1px 1px 1px 0px;
+    padding: 2px 6px 2px 6px;
+}
+#advanced-setting{
+    margin-top: 4px;
+    border-width: 0px;
+    background-color: transparent;
+    padding: 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#float-display{
+    width: 40px;
+}
